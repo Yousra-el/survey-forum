@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./example3.css">
+</head>
+<body>
+   
+<!-- id=title--> 
+<div class="container">
+  <header class="header">
+<h1 id="title" class="title-center"> Event Survey Form </h1> 
+<!-- id=description--> 
+<p id="description" class="description-text-center"> 
+   Thank you for your interest, please fill out the form 
+  </p> 
+    </header>
+<!-- id=survey form--> 
+<form id="survey-form">
+  <div class="form-group"> 
+    <label id="name-label" for="name" > Name :  </label>
+    <input type="text" name="name" id="name" class="form-control" placeholder="Enter your name" required /> 
+    </div>
+
+   <div class="form-group"> 
+     <label id="email-label" for="email" > Email :  </label>
+      <input type="email" name="email" id="email" class="form-control" placeholder="Enter your email" required />
+    </div>
+    <div class="form-group"> 
+       <label id="number-label" for="number" > Age : <span class="clue">(optional)</span> </label>
+    <input type="number" name="age" min="12"  max="90" id="number" class="form-control" placeholder="Age" required />
+    </div>
+<!-- id=dropdown-->
+<div class="form-group">
+  <p>  Select Your Current Role : </p>
+  
+   <select id="dropdown" name="role" class="form-control" required />
+  <option value="student">Student</option>
+  <option value="learner"> Learner </option>
+  <option value="work"> Work </option>
+  <option value="other">Other</option>
+  </select>
+    </div>
+
+ <div class="form-group">
+   <p>Would you participat to the event ?</p>
+   <label>
+     <input name="user-recommend" value="yes" type="radio" class="input-radio" checked /> Yes</label
+      >
+    <label>
+        <input name="user-recommend" value="no" type="radio" class="input-radio" checked />
+      No </label> 
+     <label>
+       <input name="user-recommend" value="not-sure" type="radio" class="input-radio"/>Not sure</label>
+    </div>
+    <div class="form-group">
+      <p>Any comments or suggestions?</p>
+      
+<textarea id="comments" class="input-textarea" name="comment" placeholder="Enter your comment here "></textarea>
+      </div>
+<!-- submit button -->
+   <div class="form-group">
+     <button type="submit" id="submit" class="submit-button"> Submit </button>
+     </div>
+</form>
+</div>
+     
+</body>
+</html>
